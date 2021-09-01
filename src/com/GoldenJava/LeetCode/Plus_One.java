@@ -1,9 +1,9 @@
 package com.GoldenJava.LeetCode;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
+
 public class Plus_One {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -12,11 +12,11 @@ public class Plus_One {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        int[] ints = plusOne(arr);
+        int[] ints = plusOne1(arr);
 //        System.out.println(ints.length);
-        for(int i=0;i<ints.length;i++){
+       /* for(int i= ints.length-1;i>=0;i--){
             System.out.print(ints[i]+" ");
-        }
+        }*/
     }
     public static int[] plusOne(int[] digits) {
         int sum=0;
@@ -57,8 +57,16 @@ public class Plus_One {
             nums.add(r);
             sum1/=10;
         }
-        Integer[] num= new Integer[nums.size()];
-        num=(Integer[])nums.toArray();
-        return nums;
+        /*Object[] num=  nums.toArray();
+//        Collections.reverse(Arrays.stream(num).toList());
+        System.out.println(Arrays.toString(num));
+        int[] n=nums.stream().mapToInt(i ->i).toArray();
+//        System.out.println(n.length);
+*/
+        List<Object> list=Arrays.asList(nums);
+        Collections.reverse(list);
+        int[] n=list.stream().mapToInt(i -> (int) i).toArray();
+        System.out.println(Arrays.toString(n));
+        return n;
     }
 }
