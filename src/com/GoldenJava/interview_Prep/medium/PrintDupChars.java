@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class PrintDupChars {
     public static void main(String[] args) {
-        String s="raja aekaa";
+        String s="raja aekkaa";
         char[] c=s.toCharArray();
 
         Set<Character> set=new HashSet<>();

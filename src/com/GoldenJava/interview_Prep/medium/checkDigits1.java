@@ -5,18 +5,17 @@ public class checkDigits1 {
     public static void main(String[] args) {
         String[] arr= {"123", "-123" , "123.12", "abcd123"};
         for(String a: arr){
-            int count=0,flag=0;
+            int count=0;
             for(int i=0;i<a.length();i++){
                 if(a.charAt(i)<='9' && a.charAt(i)>='0'){
                     count++;
                 }else{
-                    flag=1;
+                    System.out.println(a+" is not a number");
+                    break;
                 }
             }
-            if(flag==0 && count==a.length()){
+            if(count==a.length()){
                 System.out.println(a+" is a number");
-            }else{
-                System.out.println(a+" is not a number");
             }
         }
     }
