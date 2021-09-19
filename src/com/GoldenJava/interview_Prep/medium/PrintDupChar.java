@@ -1,5 +1,7 @@
 package com.GoldenJava.interview_Prep.medium;
 
+// Using loops and Collections --> O(n)
+// Print all the duplicate characters present in a string
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;

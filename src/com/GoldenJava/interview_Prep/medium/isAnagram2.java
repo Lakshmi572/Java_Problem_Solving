@@ -1,5 +1,6 @@
 package com.GoldenJava.interview_Prep.medium;
-
+// Using inBuilt methods
+// check whether both given strings having same set of characters
 import java.util.Arrays;
 
 public class isAnagram2 {

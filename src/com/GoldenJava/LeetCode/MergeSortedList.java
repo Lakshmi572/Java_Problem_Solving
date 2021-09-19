@@ -12,7 +12,9 @@ public class MergeSortedList {
         l1.insert(50);
         l2.insert(60);
         l1.insert(70);
-//        l1.display();
+        /*l1.insert(80);
+        l1.insert(90);*/
+        l1.display();
 
         MergeSortedList merge=new MergeSortedList();
         ListNode merging = merge.Merging(l1, l2);

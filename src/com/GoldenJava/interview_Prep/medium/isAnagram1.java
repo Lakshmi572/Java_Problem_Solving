@@ -1,5 +1,6 @@
 package com.GoldenJava.interview_Prep.medium;
-
+// Using Loops
+// check whether both given strings having same set of characters
 public class isAnagram1 {
     public static void main(String[] args) {
          String s="sTop";

@@ -10,7 +10,7 @@ public class Count {
     public static void main(String[] args) {
         //Count the number of duplicate elements and print print using stream operations...
         List<Integer> val=new ArrayList<>();
-        val.add(10);val.add(34);val.add(10);val.add(45);val.add(34);val.add(45);val.add(45);
+        val.add(10);val.add(34);val.add(10);val.add(45);val.add(34);val.add(45);val.add(45);val.add(76);val.add(67);
         //method reference
         val.forEach(System.out::println);
         Set<Integer> dupes=new HashSet<>();

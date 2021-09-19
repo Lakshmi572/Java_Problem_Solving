@@ -1,22 +1,15 @@
 package com.GoldenJava.interview_Prep.medium;
 
-import java.util.HashMap;
+//Using loops --> O(n^2)
+// Print all the duplicate characters present in a string
+
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class PrintDupChars {
     public static void main(String[] args) {
-        String s="rajasekhar aekaa";
+        String s="raja aekaa";
         char[] c=s.toCharArray();
-       /* Map<Character,Integer> map=new HashMap<>();
-        for(int i=0;i<c.length;i++){
-            if(!map.containsKey(c[i])){
-                map.put(c[i],1);
-            }else{
-                map.put
-            }
-        }*/
 
         Set<Character> set=new HashSet<>();
         for(int i=0;i<s.length();i++){
