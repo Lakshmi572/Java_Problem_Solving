@@ -16,6 +16,7 @@ public class non_repeatChar2 {
         if(s.length()==0){
             return ' ';
         }
+        s=s.toLowerCase();
         char[] chars = s.toCharArray();
         Map<Character, Integer> map=new LinkedHashMap<>();
         for(Character c:chars){

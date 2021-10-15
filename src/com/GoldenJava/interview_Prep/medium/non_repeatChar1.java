@@ -18,6 +18,7 @@ public class non_repeatChar1 {
         if(s.length()==1){
             return s.charAt(0);
         }
+        s=s.toLowerCase();
         StringBuilder sb=new StringBuilder(s);
         for (int i=0;i<sb.length();i++){
             int flag=0;
