@@ -6,6 +6,7 @@ public class Impl implements Inter1,Inter2{
         System.out.println("Implementation method");
     }
 
+    // **** Default methods ambiguity can be resolved like this ****
     @Override
     public void m1() {
         Inter2.super.m1();
